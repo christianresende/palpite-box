@@ -10,8 +10,8 @@ const Header = () => {
           <Link href="/">
             <a>
               <img
-                className="mx-auto w-40"
-                src="/logo_palpitebox.png"
+                className="mx-auto"
+                src="/chrismonteiro1.png"
                 alt="PalpiteBox"
               />
             </a>
