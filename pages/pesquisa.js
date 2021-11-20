@@ -90,7 +90,7 @@ const Pesquisa = () => {
             required
           />
           <label className="font-bold ">Nota:</label>
-          <div className="flex mb-4 py-6">
+          <div className="flex">
             {notas.map((nota) => {
               return (
                 <label className="block w-1/6 text-center ">
@@ -107,14 +107,15 @@ const Pesquisa = () => {
               );
             })}
           </div>
-
-          <button
-            className="bg-blue-400 px-6 py-4 font-bold rounded-lg  shadow-lg hover:shadow"
-            onClick={save}
-          >
-            {" "}
-            Salvar{" "}
-          </button>
+          <div class="botao">
+            <button
+              className="bg-blue-400 px-6 py-4 font-bold rounded-lg  shadow-lg hover:shadow m-3 items-center"
+              onClick={save}
+            >
+              {" "}
+              Salvar{" "}
+            </button>
+          </div>
         </div>
       )}
       {sucess && (
