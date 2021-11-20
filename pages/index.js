@@ -13,7 +13,7 @@ const Index = () => {
     <div>
       <PageTitle title="Home" />
       <p className="text-center mt-12">
-        O restaurante X sempre busca por atender melhor seus clientes. <br />
+        Sua felicidade está aqui <br />
         Por isso, estamos sempre abertos a ouvir sua opinião.
       </p>
       <div className="text-center my-12 ">
