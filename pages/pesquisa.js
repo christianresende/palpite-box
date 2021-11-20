@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import PageTitle from "../components/PageTitle";
 
 const Pesquisa = () => {
@@ -130,7 +129,7 @@ const Pesquisa = () => {
               <span className="font-bold text-2xl">{retorno.Cupom}</span>
             </div>
           )}
-          {retorno.showCupom && (
+          {retorno.showPromo && (
             <div className="text-center border shadow p-4 mb-4">
               <span className="font-bold block mb-2">{retorno.Promo}</span>
               <br />
