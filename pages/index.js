@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 import "tailwindcss/tailwind.css";
 import useSWR from "swr";
 import PageTitle from "../components/PageTitle";
