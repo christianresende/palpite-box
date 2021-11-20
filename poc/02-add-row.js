@@ -6,17 +6,21 @@ const doc = new GoogleSpreadsheet(
 );
 
 const run = async () => {
-  await doc.useServiceAccountAuth(credentials);
-  await doc.loadInfo();
-  const sheet = doc.sheetsByIndex[1];
-  await sheet.addRow({
-    Nome: "Christian",
-    Email: "contato@devpleno.com",
-    Whatsapp: "35999090011",
-    Cupom: "aaa111",
-    Promo: "asdfljfçlas",
-  });
-  console.log(doc.title);
+  try {
+    await doc.useServiceAccountAuth(credentials);
+    await doc.loadInfo();
+    const sheet = doc.sheetsByIndex[1];
+    await sheet.addRow({
+      Nome: "Christian",
+      Email: "contato@devpleno.com",
+      Whatsapp: "35999090011",
+      Cupom: "aaa111",
+      Promo: "asdfljfçlas",
+    });
+    console.log(doc.title);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 run();

@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/Link";
 import "tailwindcss/tailwind.css";
+import useSWR from "swr";
+import PageTitle from "../components/PageTitle";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const Index = () => {
+  const { data, error } = useSWR("/api/get-promo", fetcher);
+
   return (
     <div>
+      <PageTitle title="Home" />
       <p className="text-center mt-12">
         O restaurante X sempre busca por atender melhor seus clientes. <br />
         Por isso, estamos sempre abertos a ouvir sua opinião.
@@ -16,7 +23,10 @@ const Index = () => {
           </a>
         </Link>
       </div>
-      <p className="text-center my-12">Mensagem do desconto</p>
+      {!data && <p>Carregando...</p>}
+      {!error && data && data.showCoupon && (
+        <p className="text-center my-12">{data.message}</p>
+      )}
     </div>
   );
 };

@@ -6,20 +6,22 @@ const doc = new GoogleSpreadsheet(
 );
 
 const run = async () => {
-  await doc.useServiceAccountAuth(credentials);
-  await doc.loadInfo();
-  console.log(doc.title);
+  try {
+    await doc.useServiceAccountAuth(credentials);
+    await doc.loadInfo();
+    console.log(doc.title);
 
-  const sheet = doc.sheetsByIndex[2];
-  await sheet.loadCells("A2:B2");
+    const sheet = doc.sheetsByIndex[2];
+    await sheet.loadCells("A2:B2");
 
-  console.log(sheet.title);
+    console.log(sheet.title);
 
-  const mostrarPrommocaoCell = sheet.getCell(1, 0);
-  console.log(mostrarPrommocaoCell.value);
+    const mostrarPrommocaoCell = sheet.getCell(1, 0);
+    console.log(mostrarPrommocaoCell.value);
 
-  const textoCell = sheet.getCell(1, 1);
-  console.log(textoCell.value);
+    const textoCell = sheet.getCell(1, 1);
+    console.log(textoCell.value);
+  } catch (err) {}
 };
 
 run();
