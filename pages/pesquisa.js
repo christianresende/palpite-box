@@ -43,7 +43,7 @@ const Pesquisa = () => {
         <p className="text-center mb-6">
           A clínica Chris Monteiro sempre busca por atender melhor seus
           clientes. <br />
-          Por isso, estamos sempre abertos a ouvir sua opinião.
+          Nos dê sua opinião e sugestão para melhorar nossos serviços.
         </p>
       </div>
 
