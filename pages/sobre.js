@@ -11,11 +11,6 @@ const Sobre = () => {
         Somos um espaço especializado em beleza e bem-estar, alinhando, cada vez
         mais, vaidade com saúde.{" "}
       </p>
-      <div>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </div>
     </div>
   );
 };
