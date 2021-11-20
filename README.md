@@ -1,8 +1,8 @@
 # PalpiteBox - Semana Fullstack Master
 
-[![HitCount](https://hits.dwyl.com/tuliofaria/tuliofaria/palpite-box.svg)]
 
-Este projeto foi construído durante o Curso Fullstack Master do [DevPleno](https://devpleno.com). Uma versão online deste projeto pode ser encontrada em: 
+
+Este projeto foi construído durante o Curso Fullstack Master do [DevPleno](https://devpleno.com). Uma versão online deste projeto pode ser encontrada em: https://palpite-box-snowy.vercel.app/
 
 ![Preview](https://github.com/tuliofaria/palpite-box/blob/master/print.png?raw=true)
 
@@ -22,6 +22,7 @@ npm run dev
 ## Layout:
 
 Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/HxvAYhS6l7UDI49u8uLdaC/palpite-box?node-id=0%3A1).
+Aqui implementei uma adaptação para uma clínica de estética.
 
 ## Colocando em produção:
 
@@ -43,7 +44,7 @@ rapidly building custom designs.
 
 ## Author:
 
-* **Tulio Faria** - [LinkedIn](https://www.linkedin.com/in/tuliofaria/)
+* **Christian Resende** - [LinkedIn](https://www.linkedin.com/in/christian-resende/) com suporte do professor Tulio Faria.
 
 
 ## Licença
@@ -52,4 +53,4 @@ Este projeto é licenciado sobre a licença MIT - veja [LICENSE.md](LICENSE.md) 
 
 ## Acknowledgments
 
-* Este projeto foi construído durante a Semana Fullstack Master do [DevPleno](https://devpleno.com).
+* Este projeto foi construído durante o Curso Fullstack Master do [DevPleno](https://devpleno.com).
